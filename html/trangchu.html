@@ -8,9 +8,67 @@
         <mete name="keyword" content="ung dung goi mon online" />
     </head>
     <body>
-        <h1 style="text-align: center;">Gọi Món Online</h1>
+        <h1 style="color: orange; text-align: center;"><strong>Gọi Món Online</strong></h1>
         <p style="text-align: center;"><a href="dangnhap.html" title="Đăng Nhập" target="_self"> Đăng Nhập </a></p>
         <p style="text-align: center;"><a href="dangky.html" title="Đăng Nhập" target="_self"> Đăng Kí </a></p>
-        
+        <form action="goimon.html" method="POST" name="search" style="text-align: center;">
+            <input type="text" placeholder="Search.." />
+            <input type="submit" value="Tìm kiếm" />
+        </form>
+        <h2 style="text-align: left;"><strong>Giới thiệu</strong></h2>
+        <ul>
+            <li>
+                Hệ thống chỉ cung cấp dịch vụ liên quan đến quá trình gọi món giữa khách hàng và nhà hàng. Hệ thống không cung cấp chức năng thanh toán cũng như không chịu trách nhiệm với bất kỳ giao dịch thanh toán nào giữa nhà hàng và khách hàng.
+            </li>
+            <li>
+                Hệ thống chỉ hỗ trợ dịch vụ gọi món đối với khách hàng có mặt trực tiếp tại nhà hàng. Hệ thống không hỗ trợ chức năng đặt hàng, giao hàng thông qua hệ thống.
+            </li>
+            <li>
+                Hệ thống hoạt động trên môi trường mạng Internet. Hệ thống không có ứng dụng hay phần mềm chạy trên các hệ điều hành Android, iOS, Windows, Linux hay bất kỳ hệ điều hành nào khác. 
+            </li>
+            <li>
+                Hệ thống không chịu trách nhiệm về các trường hợp khách hàng ảo, khách hàng không có mặt tại cửa hàng nhưng vẫn gọi món. Nhà hàng cần tự đảm bảo khách hàng gọi món thực sự có mặt tại đúng vị trí bàn mà khách hàng thông báo.
+            </li>
+        </ul>
+        <h2 style="text-align: left;"><strong>Hướng dẫn</strong></h2>
+        <dl>
+            <dt><strong>Khách hàng [customer]</strong></dt>
+            <dd>
+                <ul>
+                    <li>
+                        Gọi món [order]: Khách hàng sử dụng hệ thống để gọi món ăn mà không cần sự trợ giúp của người phục vụ, không phải chờ ở quầy phục vụ để được gọi món. Khách hàng muốn gọi món đơn giản chỉ qua vài click chuột (hoặc thao tác tay), nhưng vẫn hoàn thành được hành động gọi món. Khách hàng có thể xem được tên, hình ảnh và thông tin của các món ăn. Hệ thống thực hiện việc này bằng cách cho phép mỗi nhà hàng trong hệ thống có một địa chỉ liên kết; người dùng khi truy cập địa chỉ liên kết đó sẽ có thể xem được thực đơn do nhà hàng cung cấp và thực hiện hành động gọi món.
+                    </li>
+                    <li>
+                        Tạo tài khoản: [customer register] : Khách hàng có thể muốn nhà hàng biết được mình là khách quen hoặc muốn để lại review cho nhà hàng. Hệ thống cho phép khách hàng đăng ký tài khoản hệ thống; thông qua tài khoản, nhà hàng có thể biết được một số thông tin mà khách hàng cho phép; khách hàng có thể gọi món và viết review về nhà hàng sau khi có tài khoản.
+                    </li>
+                    <li>
+                        Đánh giá: [review] : Sau khi gọi món và dùng bữa xong tại nhà hàng, khách hàng có thể có nhu cầu nhận xét, đánh giá nhà hàng cho khách hàng đến sau có một số thông tin cơ bản. Ứng dụng cho phép khách hàng để lại đánh giá trên ứng dụng về nhà hàng sau khi dùng bữa tại nhà hàng.
+                    </li>
+                    <li>
+                        Tìm kiếm nhà hàng : [find] : Khách hàng có thể gặp khó khăn trong việc truy cập vào đường liên kết của nhà hàng cung cấp. hệ thống có khả năng hỗ trợ khách hàng bằng việc cho phép khách hàng tìm kiếm nhà hàng theo tên giúp khách hàng thuận tiện và hiệu quả hơn cho hành động gọi món.
+                    </li>
+                    <li>
+                        Nhận thông báo khi món ăn sẵn sàng: [get notification] : Xác nhận đặt món thành công một cách đơn giản, không cần phải chờ nghe thông báo từ phục vụ hay phát loa. Ứng dụng sẽ gửi thông báo trực tiếp cho khách hàng ngay trên hệ thống khi nhà hàng xác nhận món đã hoàn thành.
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Nhà hàng [restaurant]</strong></dt>
+            <dd>
+                <ul>
+                    <li>
+                        Đăng ký làm nhà hàng thành viên: [restaurant register] : Nhà hàng muốn tham gia vào hệ thống để triển khai mô hình nhằm giảm chi phí cho việc thuê nhân viên phục vụ và đảm bảo, cũng như đẩy nhanh quá trình gọi món của khách hàng. Nhà hàng cần đăng ký tham gia hệ thống, quản trị viên sau khi duyệt nhà hàng sẽ cấp một tài khoản nhà hàng, mọi chức năng của nhà hàng đều thông qua tài khoản đó.
+                    </li>
+                    <li>
+                        Tùy chỉnh thực đơn : [customize] : Mỗi nhà hàng sẽ có những thực đơn khác nhau, và cũng có thể thay đổi món ăn tùy thuộc vào thời gian. Hệ thống cho phép nhà hàng thay đổi thực đơn như chỉnh sửa , thêm, xóa thực đơn của nhà hàng bằng tài khoản được quản trị viên cấp.
+                    </li>
+                    <li>
+                        Nhận thông báo gọi món: [get notification] : Biết được khách hàng đặt món là nhu cầu thiết yếu của nhà hàng, biết được khách đặt món ở vị trí bàn ăn nào và các món đã gọi. Ứng dụng sẽ chuyển thông báo đặt món của người dùng về cho chủ nhà hàng, và tổng hợp lại, từ đó nhà hàng dễ dàng, chủ động hơn trong việc nhận đơn món ăn và phục vụ món đến thực khách.
+                    </li>
+                    <li>
+                        Thông báo khách hàng khi hoàn thành món : [push notification] : Sau khi nhận được đơn gọi món của khách hàng và hoàn thành chế biến món ăn, nhà hàng sẽ muốn thông báo cho khách hàng biết được món ăn của mình đã sẵn sàng. Hệ thống cho phép nhà hàng gửi một thông báo tới khách hàng thông qua hệ thống.
+                    </li>
+                </ul>
+            </dd>
+        </dl>
     </body>
 </html>
